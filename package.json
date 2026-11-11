@@ -1,0 +1,20 @@
+
+{
+  "name": "search-insight-js",
+  "version": "0.1.0",
+  "private": true,
+  "description": "検索履歴・長期傾向・心理的仮説・キーワード関連グラフのテスト用基盤",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test",
+    "test:unit": "node --test test/*.test.js",
+    "test:coverage": "node --test --experimental-test-coverage",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
