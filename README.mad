@@ -1,0 +1,56 @@
+
+# Search Insight JS
+
+検索履歴分析アプリのテスト基盤。
+
+## 機能
+- Google / Bing / Yahoo! Japanの検索語抽出
+- 過去履歴のJSONインポート
+- 履歴の正規化と重複排除
+- キーワード頻度集計
+- テーマ分類
+- キーワード関連性分析
+- 心理的傾向の仮説生成
+- 長期時系列分析
+- 縦棒グラフ用データ生成
+- 同意・削除・ユーザー分離のテスト
+
+## 実行環境
+Node.js 20以上
+
+## テスト実行
+
+npm test
+
+## 個別テスト
+
+npm run test:unit
+
+## カバレッジ
+
+npm run test:coverage
+
+## E2Eテスト
+
+npm install
+npx playwright install
+npm run test:e2e
+
+## 履歴JSON形式
+
+[
+  {
+    "url": "https://www.google.com/search?q=引っ越し+初期費用",
+    "timestamp": "2026-01-12T09:30:00.000Z",
+    "source": "google"
+  }
+]
+
+## 注意事項
+
+現在の実装はテスト可能な最小基盤です。
+Chrome拡張、AI API、実際の画面、認証、
+クラウド保存はまだ接続していません。
+
+心理分析は検索履歴からの仮説に限定します。
+精神疾患や人格などを診断・断定しません。
